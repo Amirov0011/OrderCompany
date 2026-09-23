@@ -1,4 +1,14 @@
 package az.ordercompany.model.event;
 
-public record OrderCreatedEvent() {
+import az.ordercompany.model.enums.PaymentType;
+
+import java.math.BigDecimal;
+
+public record OrderCreatedEvent(Long orderId,
+                                Long productId,
+                                Integer quantity,
+                                BigDecimal amount,
+                                PaymentType paymentType
+) {
+
 }

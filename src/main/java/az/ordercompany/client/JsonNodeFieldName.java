@@ -1,4 +1,14 @@
 package az.ordercompany.client;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
-public class JsonNodeFieldName {
+@AllArgsConstructor
+@Getter
+
+public enum JsonNodeFieldName {
+    MESSAGE("message");
+
+    private final String value;
+
+
 }

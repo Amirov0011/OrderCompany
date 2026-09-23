@@ -1,4 +1,9 @@
 package az.ordercompany.exception;
 
-public class ErrorResponse {
+import lombok.Builder;
+
+@Builder
+public record ErrorResponse (String message){
+
+
 }

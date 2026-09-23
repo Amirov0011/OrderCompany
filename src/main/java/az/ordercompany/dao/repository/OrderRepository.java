@@ -1,4 +1,7 @@
-package az.ordercompany.dao;
+package az.ordercompany.dao.repository;
 
-public interface OrderRepository {
+import az.ordercompany.dao.entity.OrderEntity;
+import org.springframework.data.repository.CrudRepository;
+
+public interface OrderRepository extends CrudRepository<OrderEntity, Long> {
 }
